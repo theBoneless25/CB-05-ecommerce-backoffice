@@ -8,10 +8,17 @@
   .sxColumn {
     width: 500px;
     height: calc(100vh - $header-height);
-    padding: 20px;
+    padding: 12px;
+
+    @media all and (max-width: 800px) {
+      & {
+        width: 100px;
+      }
+    }
   }
   .dxColumn {
     width: 100%;
     height: calc(100vh - $header-height);
+    padding: 12px;
   }
 }

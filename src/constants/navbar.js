@@ -1,11 +1,11 @@
 import {
   GrHomeRounded,
   GrList,
-  GrRobot,
   GrCreditCard,
   GrUserManager,
   GrUserSettings,
 } from "react-icons/gr";
+import { MdProductionQuantityLimits } from "react-icons/md";
 
 export const navBarLinks = [
   {
@@ -24,7 +24,7 @@ export const navBarLinks = [
     id: 3,
     label: "Prodotti",
     route: "products",
-    icon: <GrRobot />,
+    icon: <MdProductionQuantityLimits />,
   },
   {
     id: 4,
