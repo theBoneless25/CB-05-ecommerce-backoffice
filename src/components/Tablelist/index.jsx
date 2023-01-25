@@ -19,11 +19,15 @@ const Tablelist = ({ categoriesState, getData, loading }) => {
         <div className={styles.tableBody}>
           {categoriesState.map((item) => (
             <div className={styles.tableRow} key={item.id}>
+              <p>{item.id}</p>
               <img src={item.image} alt={item.name} />
               <p className={styles.name}>{item.name.substring(0, 15)}</p>
               <div className={styles.btnSet}>
-                <BtnEdit />
-                <BtnRemove />
+                <BtnEdit
+                  getData={getData}
+                  data={{ name: item.name, image: item.image, id: item.id }}
+                />
+                <BtnRemove getData={getData} id={item.id} />
               </div>
             </div>
           ))}

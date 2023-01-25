@@ -2,7 +2,7 @@ import styles from "./styles.module.scss";
 import { navBarLinks } from "./../../constants/navbar.js";
 import LiComponent from "./../LiComponent";
 
-const NavBar = ({ setRoute }) => {
+const NavBar = ({ setRoute, stateRoute }) => {
   return (
     <ul className={styles.main}>
       {navBarLinks.map((item) => (
@@ -12,6 +12,7 @@ const NavBar = ({ setRoute }) => {
           label={item.label}
           setRoute={setRoute}
           routeUrl={item.route}
+          stateRoute={stateRoute}
         />
       ))}
     </ul>
