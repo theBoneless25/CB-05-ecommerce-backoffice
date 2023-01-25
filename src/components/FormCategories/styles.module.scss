@@ -1,0 +1,23 @@
+.formModal {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(64, 64, 240);
+  border: 1px solid rgb(64, 64, 240);
+  box-shadow: 0 5px 5px rgb(64, 64, 240);
+  border-radius: 5%;
+  gap: 20px;
+
+  input {
+    border-radius: 5%;
+    margin: 5px 10px;
+    padding: 2px;
+  }
+  .btnEdit {
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+  }
+}

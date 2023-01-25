@@ -3,8 +3,16 @@
   background-color: #fff;
   min-height: 300px;
   border-radius: 10px;
-  padding: 20px;
+  padding: 40px;
   h1 {
-    font-size: 20px;
+    font-size: 60px;
+  }
+  img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid gray;
+    box-shadow: 0 5px 10px blue;
+    border-radius: 100%;
+    margin-top: 10px;
   }
 }
