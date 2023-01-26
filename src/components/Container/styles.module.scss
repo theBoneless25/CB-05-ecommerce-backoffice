@@ -5,6 +5,8 @@
   height: calc(100vh - $header-height);
   background-color: #ececec;
   display: flex;
+  padding: 10px;
+  justify-content: space-between;
   .sxColumn {
     width: 500px;
     height: calc(100vh - $header-height);
@@ -13,6 +15,8 @@
     @media all and (max-width: 800px) {
       & {
         width: 100px;
+        align-items: center;
+        justify-content: center;
       }
     }
   }
@@ -20,5 +24,8 @@
     width: 100%;
     height: calc(100vh - $header-height);
     padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }

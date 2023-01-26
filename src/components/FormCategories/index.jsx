@@ -64,11 +64,19 @@ const FormCategories = ({ setShowModal, getData, data }) => {
       />
 
       {edit ? (
-        <button type="submit" onClick={(e) => editForm(e)}>
+        <button
+          className={styles.btnEdit}
+          type="submit"
+          onClick={(e) => editForm(e)}
+        >
           MODIFICA
         </button>
       ) : (
-        <button type="submit" onClick={(e) => submitForm(e)}>
+        <button
+          className={styles.btnEdit}
+          type="submit"
+          onClick={(e) => submitForm(e)}
+        >
           MODIFICA
         </button>
       )}
