@@ -15,6 +15,16 @@
       font-size: 30px;
     }
   }
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    cursor: pointer;
+  }
+  .icons:hover {
+    color: lightblue;
+  }
   .btnSet {
     width: 60px;
     height: 60px;

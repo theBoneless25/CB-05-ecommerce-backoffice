@@ -1,14 +1,24 @@
-import styles from "./styles.module.scss";
+import styled from "styled-components";
+import Carousel from "../CarouselHome/Carousel";
+import Title from "../CarouselHome/Title";
+import Hero from "../CarouselHome/Hero";
 
 const Home = () => {
+  const Container = styled.div`
+    width: 100%;
+
+    background-color: whitesmoke;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  `;
   return (
-    <div className={styles.main}>
-      <h1>SNEAKERS ESA RESELL</h1>
-      <img
-        src="https://i.pinimg.com/originals/cf/fc/02/cffc02bbd1c977184f101909cc5f7147.gif"
-        alt="logo"
-      />
-    </div>
+    <Container>
+      <Title title="ESA SNRKS" />
+      <Hero />
+      <Carousel />
+    </Container>
   );
 };
 

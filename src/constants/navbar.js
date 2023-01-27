@@ -6,6 +6,7 @@ import {
   GrUserSettings,
 } from "react-icons/gr";
 import { MdProductionQuantityLimits } from "react-icons/md";
+import { BiHelpCircle } from "react-icons/bi";
 
 export const navBarLinks = [
   {
@@ -44,5 +45,11 @@ export const navBarLinks = [
     label: "Impostazioni",
     route: "impostazioni",
     icon: <GrUserSettings />,
+  },
+  {
+    id: 7,
+    label: "Aiuto & FAQ",
+    route: "Help",
+    icon: <BiHelpCircle />,
   },
 ];
